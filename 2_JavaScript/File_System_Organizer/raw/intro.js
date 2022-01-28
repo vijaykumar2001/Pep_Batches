@@ -54,21 +54,20 @@ xdfg
 // Non-Primitive => Array, Object, Function
 
 // Function Definition
-// function printValue(param1, param2){
-    // console.log("Hello World!!", param1, param2);
-    // return (Math.random() > 0.5) ? false : "Not";
-    // }
+ /*function printValue(param1, param2){
+     console.log("Hello World!!", param1, param2);
+     return (Math.random() > 0.5) ? false : "Not";
+     }*/
 
     // // Function call or invocation
-    // let rVal = printValue(100, true);
-    // console.log(rVal);
+     /*let rVal = printValue(100, true);
+     console.log(printValue(4,5));*/
 
     // Function as a value in a variable
-    // let fn=function printVal() {
-    //    console.log("Hello world");
-    // }
-    // console.log(fn);
-
+       let fn = function printVal() { // function's address
+        console.log("Hello world");
+     }
+     console.log(fn); 
     // Arrays declaration
     // let arr1 = [1,2,3,4];
     // arr1[0]=100;
@@ -124,7 +123,7 @@ xdfg
     // Key,value
     // CRUD => Create, Read, Update & Delete
     // Defining an object => Create
-    let obj= {
+    /* let obj= {
         name: "Pepper",
         age: 22,
         fun: function greet() {
@@ -134,7 +133,7 @@ xdfg
         my_obj: {
             company: "Pepcoding",
         }
-    }
+    } */
      // let myObj = obj.my_obj;
      // let cmpny = myObj.company
      // let myObj = obj["my_obj"];

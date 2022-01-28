@@ -11,8 +11,8 @@
  let fs = require("fs");
 
 // To read content
-// let content = fs.readFileSync("f1.txt");
-// console.log(content+"");
+ let content = fs.readFileSync("f1.txt");
+ console.log(content+"");
 
 // To write content
 // File not exist => create
@@ -20,6 +20,7 @@
 // fs.writeFileSync("f2.txt", "I am f2\n");
 
 // To write content without overriding
+// fs.appendFileSync("f2.txt", "Hello, I can append content now\n");
 // fs.appendFileSync("f2.txt", "Hello, I can append content now");
 
 // Create folder 
@@ -27,7 +28,6 @@
 
 // Delete a module
 // fs.rmdirSync("facts");
-
 
 
 // path
