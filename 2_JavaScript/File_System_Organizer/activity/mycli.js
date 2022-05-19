@@ -1,23 +1,23 @@
-let helpfn=require("./commands/help"); // importing help function; // helpfn is dummy variable to import help fn
-let organizefn=require("./commands/organize");
-let viewfn=require("./commands/view");
+let helpFn=require("./commands/help"); // importing help function; // helpfn is dummy variable to import help fn
+let organizeFn=require("./commands/organize");
+let viewFn=require("./commands/view");
 
 let input=process.argv.slice(2); // taking input // returns array
 
- // console.log(input);  
+//  console.log(input);  
 
 
- let command= input[0];
+ let command = input[0];
 
  switch(command){
      case "view" :
-         viewfn.view(input[1], input[2]);
+         viewFn.view();
          break;
      case "organize" :
-         organizefn.organize();
+         organizeFn.organize();
         break;
     default: // help
-        helpfn.help();
+        helpFn.help();
         // help
         break;
 

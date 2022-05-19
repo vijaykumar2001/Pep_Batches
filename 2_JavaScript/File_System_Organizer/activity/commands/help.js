@@ -1,4 +1,4 @@
-function helpfn(){
+function helpFn(){
 
     // use backticks for multiline strings
     console.log(`
@@ -13,7 +13,7 @@ function helpfn(){
 }
 
 module.exports={ // exporting help function
-    help: helpfn// help is the key and helpfn is fn name
+    help: helpFn// help is the key and helpfn is fn name
 }
 
 
