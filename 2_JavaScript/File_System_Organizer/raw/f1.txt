@@ -1,1 +1,1 @@
-I am f1.txt
+Hey, this is the content of f1 file.

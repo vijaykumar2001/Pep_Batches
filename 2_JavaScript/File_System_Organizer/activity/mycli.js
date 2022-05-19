@@ -16,7 +16,7 @@ let input=process.argv.slice(2); // taking input // returns array
      case "organize" :
          organizefn.organize();
         break;
-    default:
+    default: // help
         helpfn.help();
         // help
         break;

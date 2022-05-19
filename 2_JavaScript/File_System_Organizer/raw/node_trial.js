@@ -1,7 +1,7 @@
 // os module
 // let os = require("os");
 // console.log(os.arch());
-// console.log(os.platform);
+// console.log(os.platform());
 // console.log(os.networkInterfaces());
 
 /******************************************************/
@@ -11,8 +11,8 @@
  let fs = require("fs");
 
 // To read content
- let content = fs.readFileSync("f1.txt");
- console.log(content+"");
+//  let content = fs.readFileSync("f1.txt");
+//  console.log(content+"");
 
 // To write content
 // File not exist => create
@@ -21,7 +21,6 @@
 
 // To write content without overriding
 // fs.appendFileSync("f2.txt", "Hello, I can append content now\n");
-// fs.appendFileSync("f2.txt", "Hello, I can append content now");
 
 // Create folder 
 // fs.mkdirSync("facts");

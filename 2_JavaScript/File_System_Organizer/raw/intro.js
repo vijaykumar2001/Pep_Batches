@@ -2,12 +2,14 @@
 // Print something
 // console.log("Hello World!!");
 
-// Variables Declaration
-// let => Keyword to declare variables
-// let a=10;
-// console.log("My variable", a);
+/*********************************************************/
 
-// JS is dynamically typed Language
+//  Variables Declaration
+//  let => Keyword to declare variables
+//  let a=10;
+//  console.log("My variable", a);
+
+// // JS is dynamically typed Language
 // a="GoodBye";
 // console.log("My variable", a);
 
@@ -19,17 +21,16 @@
 // console.log("My variable",a);
 
 
-/*if(a==true){
-    console.log("This is true condition");
-}else{
-    console.log("This is false condition");
-}
+// if(a==true){
+//     console.log("This is true condition");
+// }else{
+//     console.log("This is false condition");
+// }
 
-let endLimit=5;
-for(let i=0;i<endLimit;i++){
-    console.log("Hello", i, "-times");
-} */
-
+// let endLimit=5;
+// for(let i=0;i<endLimit;i++){
+//     console.log("Hello", i, "-times");
+// } 
 
 
 // Datatypes => Primitive, Non-primitive
@@ -49,25 +50,25 @@ xdfg
 */
 
 
-
+/************************************************************************/
 
 // Non-Primitive => Array, Object, Function
 
 // Function Definition
- /*function printValue(param1, param2){
-     console.log("Hello World!!", param1, param2);
-     return (Math.random() > 0.5) ? false : "Not";
-     }*/
+//  function printValue(param1, param2){
+//      console.log("Hello World!!", param1, param2);
+//      return (Math.random() > 0.5) ? false : "Not";
+//      }
 
-    // // Function call or invocation
-     /*let rVal = printValue(100, true);
-     console.log(printValue(4,5));*/
+//     // Function call or invocation
+//      let rVal = printValue(100, true);
+//      console.log(printValue(4,5));
 
     // Function as a value in a variable
-       let fn = function printVal() { // function's address
-        console.log("Hello world");
-     }
-     console.log(fn); 
+    //    let fn = function printVal() { // variable holds the function's address
+    //     console.log("Hello world");
+    //  }
+    //  console.log(fn); 
     // Arrays declaration
     // let arr1 = [1,2,3,4];
     // arr1[0]=100;
@@ -82,12 +83,14 @@ xdfg
 
     // Dynamic
     // let arr2= [
-        // 1,2,556,677,"Hellow", true,
-        // function someting(){
-            // console.log("In array");
-        // },
-        // 'Bye'
+    //     1,2,556,677,"Hellow", true,
+    //     function someting(){
+    //         console.log("In array");
+    //     },
+    //     'Bye'
     // ];
+
+    // console.log(arr2[6]);
 
     // let fn=arr2[6];
     // fn();
@@ -108,6 +111,7 @@ xdfg
     // console.log(arr.shift(), arr);
     // arr.unshift(100); // Add from front in arr
     // arr.unshift(200);
+    // console.log(arr);
     
     // arr.slice(included, excluded) => copy
     // arr.slice(start_index, end_index) => copy
@@ -123,7 +127,7 @@ xdfg
     // Key,value
     // CRUD => Create, Read, Update & Delete
     // Defining an object => Create
-    /* let obj= {
+     let obj= {
         name: "Pepper",
         age: 22,
         fun: function greet() {
@@ -133,12 +137,15 @@ xdfg
         my_obj: {
             company: "Pepcoding",
         }
-    } */
-     // let myObj = obj.my_obj;
-     // let cmpny = myObj.company
+    } 
+    //  let myObj = obj.my_obj;
+    //  let cmpny = myObj.company
      // let myObj = obj["my_obj"];
      // let cmpny = myObj.company;
-     //console.log(obj.my_obj.company);
+    //  console.log(obj.my_obj.company);
+    //  console.log(myObj.company);
+    //  console.log(cmpny);
+
     // Read => Access
     // let myName = obj.name;
     // let myFun = obj.fun;
@@ -149,20 +156,19 @@ xdfg
     // console.log(myFun);
     
     
-    
-    
     // Update
     // obj.college = "IIT"; // Update new
     // obj.age = 20; // Override existing obj key
     // console.log(obj);
+
     // Delete
     // delete obj["name"];
     // console.log(obj);
 
     // for-in => To iterate on object
-    // for (let key in obj) {
-      //  console.log(obj.key);
-    // }
+    for (let key in obj) {
+       console.log(obj[key]);
+    }
 
 
 

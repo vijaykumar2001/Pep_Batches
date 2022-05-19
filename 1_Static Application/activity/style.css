@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+
+/*Bring your html tags into visibilty =>Background color */
+.topbar-cont{
+    /*background-color: lightblue;*/
+    display: flex;
+    /*Want space in-between */
+    justify-content: space-between;
+}
+.title-cont{
+    /*background-color: lightcoral;*/
+}
+.nav-cont{
+   /* background-color: lightsalmon;*/
+    display: flex;
+    width: 10rem;
+    justify-content: space-between;
+}
+.navigation-cont{
+    /*background-color: lightgreen;*/
+}
+.image-content{
+    width: 98vw;
+    height: 80vh;
+}
+
+.content-cont{
+    display: flex;
+    text-align: center;
+}
+
+.similar-cont > img {
+    width: 4rem;
+}
+
+.copyright-cont{
+    background-color: black;
+    color: white;
+    /* text-align:center; */
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -3,28 +3,58 @@ let path = require("path");
 
 function viewfn(src, mode){
     console.log("viewing your folder");
-    viewHelperFlat(src);
+
+    if(mode == "flat")
+        viewHelperFlat(src);
+        else
+        viewHelperTree(src, "|");
 }
 
 function checkFileOrFolder(path) {
     let isFile = fs.lstatSync(path).isFile();
-    return isFile;t
+    return isFile;
 }
 
+// Print entire Path
 function viewHelperFlat(src){
     // Is it a file or folder
     let isFile = checkFileOrFolder(src);
-    if(isFile){ // Base case
+    if(isFile == true){ // Base case
        console.log(src, "*");
     }else{ // Folder => Folder1, Files
-       let childrens = fs.readdirSync(src); // Immediate Level childrens
+        console.log(src);
+       let childrens = fs.readdirSync(src); // Read content Immediate Level childrens
        
        for(let i=0;i<childrens.length;i++){
-           let child = childrens[i];
+           let child = childrens[i]; // Not a complete path, just file or folder name
            let childPath = path.join(src,child);
            console.log(childPath);
        
-           // Faith 
+           // Faith ??
+           viewHelperFlat(childPath);
+        }
+    }
+}
+
+// Print the path's foldername or filename
+function viewHelperTree(src, indent){
+    // Is it a file or folder
+    let isFile = checkFileOrFolder(src);
+    if(isFile == true){ // Base case
+        console.log(indent, path.basename(src), "*"); //path.basename() => F/App/index.js => index.js
+    }else{ // Folder => Folder1, Files
+        console.log(indent, path.basename(src));
+        let childrens = fs.readdirSync(src); // Read content Immediate childrens
+
+        for(let i=0;i<childrens.length;i++){
+            let child = childrens[i]; // Not a complete path, just file or folder name
+            let childPath = path.join(src, child);
+            // console.log(childPath);
+
+            // Faith ??
+            viewHelperTree(childPath, indent+"____");
+
+
         }
     }
 }
