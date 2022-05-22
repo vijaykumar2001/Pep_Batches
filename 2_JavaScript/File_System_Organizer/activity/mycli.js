@@ -4,14 +4,14 @@ let viewFn=require("./commands/view");
 
 let input=process.argv.slice(2); // taking input // returns array
 
-//  console.log(input);  
+ console.log(input);  
 
 
  let command = input[0];
 
  switch(command){
      case "view" :
-         viewFn.view();
+         viewFn.view(input[1],input[2]);
          break;
      case "organize" :
          organizeFn.organize();
