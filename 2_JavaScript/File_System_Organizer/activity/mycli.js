@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 let helpFn=require("./commands/help"); // importing help function; // helpfn is dummy variable to import help fn
 let organizeFn=require("./commands/organize");
 let viewFn=require("./commands/view");
