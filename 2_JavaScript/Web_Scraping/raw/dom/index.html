@@ -8,17 +8,18 @@
 </head>
 <body>
     <div></div>
-    <div class = "description-box">
+    <div class="description-box">
         <p>
             <span>Hello World in span tag</span>
         </p>
         <p>
-            <a href = "">Hello World in a tag</a>
+            <a href="">Hello World in a tag</a>
         </p>
     </div>
     <script>
+        // document => html tag
         let descBoxElem = document.querySelector(".description-box");
-        let aElem = descBoxElem.querySelector("p > a ");
+        let aElem = descBoxElem.querySelector("p > a");
         let content = aElem.textContent;
         console.log(content);
     </script>
